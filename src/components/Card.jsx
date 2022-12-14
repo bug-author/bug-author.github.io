@@ -26,7 +26,7 @@ function Card(props) {
             <Icon
               icon="icon-park-outline:github-one"
               style={{ fontSize: "20px" }}
-              color={darkMode ? "rgba(15, 23, 42, 1)" : "white"}
+              color={props.darkMode ? "rgba(15, 23, 42, 1)" : "white"}
             />
           </div>
         </a>

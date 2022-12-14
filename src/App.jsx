@@ -98,6 +98,7 @@ function App() {
                   caption="A News app with AI-generated summaries."
                   tags={["Flutter", "Python", "Transformers"]}
                   repo={"https://github.com/bug-author/feed-blast"}
+                  darkMode={darkMode}
                 />
 
                 <Card
@@ -106,6 +107,7 @@ function App() {
                   caption="A clone of the Momentum Dashboard extension."
                   tags={["ReactJS", "TailwindCSS"]}
                   repo={"https://github.com/bug-author/aura"}
+                  darkMode={darkMode}
                 />
 
                 <Card
@@ -114,6 +116,7 @@ function App() {
                   caption="A Flutter app archiving Mufti Menk's quotes over the years."
                   tags={["Flutter", "Python", "SQFlite"]}
                   repo={"https://github.com/bug-author/quote-bee"}
+                  darkMode={darkMode}
                 />
               </div>
             </div>
