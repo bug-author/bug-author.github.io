@@ -6,12 +6,12 @@ import Card from "./components/Card";
 function App() {
   const [darkMode, setdarkMode] = useState(false);
   const switchTheme = () => {
-    console.log(`current theme is ${darkMode}`);
+    // console.log(`current theme is ${darkMode}`);
     setdarkMode(!darkMode);
   };
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white p-14 dark:bg-darkBg">
+      <main className="bg-white px-10 py-4 dark:bg-darkBg">
         <section className="min-h-screen">
           <ul className="flex flex-row-reverse">
             <li onClick={switchTheme}>
@@ -33,23 +33,29 @@ function App() {
           <p className="text-sm font-semibold textColor text-center dark:text-slate-500">
             Software Developer
           </p>
-          <ul className="mt-5 flex justify-center gap-4">
+          <ul className="mt-3 flex justify-center gap-4">
             <a
               href="https://github.com/bug-author"
               target="_blank"
               className="iconStyle dark:text-slate-300"
             >
-              <Icon icon="icon-park-outline:github-one" />
+              <Icon
+                icon="icon-park-outline:github-one"
+                style={{ fontSize: "20px" }}
+              />
             </a>
             <a
               href="https://stackoverflow.com/users/10934636/stuckoverflow"
               target="_blank"
               className="iconStyle dark:text-slate-300"
             >
-              <Icon icon="ion:logo-stackoverflow" />
+              <Icon
+                icon="ion:logo-stackoverflow"
+                style={{ fontSize: "20px" }}
+              />
             </a>
           </ul>
-          <ul className="pt-6 flex text-center justify-center font-semibold">
+          <ul className=" flex text-center justify-center font-semibold">
             <div className="p-5 text-slate-800">
               <h3 className="dark:text-slate-400">1</h3>
               <p className=" textColor text-xs dark:text-slate-400">
@@ -88,10 +94,10 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="pt-16">
+          <div className="pt-10">
             <div className="text-center font-bold text-3xl dark:text-slate-400">
               Projects
-              <div className="pt-5 flex gap-5">
+              <div className="pt-5 flex gap-14 justify-center">
                 <Card
                   title="Feed Blast"
                   img="/flutter.png"
@@ -113,7 +119,7 @@ function App() {
                 <Card
                   title="Quote Bee"
                   img="/flutter.png"
-                  caption="A Flutter app archiving Mufti Menk's quotes over the years."
+                  caption="A Flutter app archiving Mufti Menk's quotes."
                   tags={["Flutter", "Python", "SQFlite"]}
                   repo={"https://github.com/bug-author/quote-bee"}
                   darkMode={darkMode}

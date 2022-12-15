@@ -7,6 +7,7 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
+  overflow: hidden;
 }
 
 .iconStyle {

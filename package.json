@@ -1,6 +1,5 @@
 {
   "name": "portfolio-page",
-  "homepage": "http://bug-author.github.io/bug-author.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

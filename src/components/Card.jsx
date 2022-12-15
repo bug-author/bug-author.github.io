@@ -11,7 +11,7 @@ function Card(props) {
     );
   });
   return (
-    <div class="rounded h-full text-center w-full overflow-hidden shadow-lg">
+    <div class="rounded h-full text-center w-1/5 overflow-hidden shadow-lg">
       <img src={props.img} alt="project image" />
       <div class="px-6 py-4">
         <div class="font-bold text-2xl mb-2">{props.title}</div>
